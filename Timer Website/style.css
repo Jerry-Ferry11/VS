@@ -7,6 +7,41 @@ body {
     background-color: #f2f2f2;
     font-family: Roboto, sans-serif;
     text-align: center;
+    color:  darkblue;
+}
+
+#background {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure the background is behind other content */
+}
+
+#content {
+    position: relative;
+    z-index: 1; /* Ensure content is above the background */
+    padding: 20px;
+}
+
+#scrolling-text-container {
+    overflow: hidden; /* Hide overflowing content */
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+#scrolling-text {
+    display: inline-block; /* Display as inline block for animation */
+    animation: scroll-left 20s linear infinite; /* Apply animation */
+    color:  #E6E6FA;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%); /* Start off-screen */
+    }
+    100% {
+        transform: translateX(-100%); /* End off-screen */
+    }
 }
 
 #timer {
