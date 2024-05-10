@@ -22,6 +22,7 @@ const questions = [
 
 
 function loadQuestion() {
+    console.log("Loading question...");
     const currentQuestion = questions[currentQuestionIndex];
     questionElement.textContent = currentQuestion.question;
     optionsContainer.innerHTML = '';
@@ -29,13 +30,13 @@ function loadQuestion() {
         const optionElement = document.createElement('div');
         optionElement.textContent = option;
         optionElement.classList.add('option');
-        optionElement.onclick = checkAnswer;
+        optionElement.onclick = checkAnswer; // Move the onclick event to each option
         optionsContainer.appendChild(optionElement);
     });
 }
 
-
 function checkAnswer(event) {
+    console.log("Checking answer...");
     const selectedOption = event.target.textContent;
     const correctAnswer = questions[currentQuestionIndex].correctAnswer;
     if (selectedOption === correctAnswer) {
@@ -43,11 +44,13 @@ function checkAnswer(event) {
     }
     currentQuestionIndex++;
     if (currentQuestionIndex < questions.length) {
-        loadQuestion();
+        loadQuestion(); // Call loadQuestion to load the next question
     } else {
-        showResult();
+        showResult(); // Show result only when all questions are answered
     }
 }
+
+loadQuestion();
 
 
 function showResult() {
