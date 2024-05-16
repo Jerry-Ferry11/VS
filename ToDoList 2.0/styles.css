@@ -93,3 +93,13 @@ li {
 .delete-btn:hover {
     background-color:  #b80819;
 }
+
+.edit-btn {
+    background-color: #ffc107;
+    color: #212529;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 5px; /* Adjust spacing between buttons */
+}
