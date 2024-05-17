@@ -27,7 +27,7 @@ function addTodoItem(todoText) {
 
     const editBtn = li.querySelector('.edit-btn');
     editBtn.addEventListener('click', function() {
-        console.log('Edit button clicked for:', todoText);
+        
     });
 
 }
