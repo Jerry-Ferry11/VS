@@ -80,15 +80,7 @@ li {
     cursor: pointer;
 }
 
-.edit-btn {
-    background-color: #28a745;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    margin-right: 5px;
-    cursor: pointer;
-}
+
 
 .delete-btn:hover {
     background-color:  #b80819;
@@ -102,4 +94,17 @@ li {
     padding: 5px 10px;
     cursor: pointer;
     margin-right: 5px; /* Adjust spacing between buttons */
+}
+
+.edit-btn:hover {
+    background-color: #ff9800;
+}
+
+.save-btn {
+    background-color: #7707ff;
+    color: #ffffff;
+}
+
+.save-btn:hover {
+    background-color: #4d00ff;
 }

@@ -27,7 +27,42 @@ function addTodoItem(todoText) {
 
     const editBtn = li.querySelector('.edit-btn');
     editBtn.addEventListener('click', function() {
-        
+        editTodoItem(li);       
     });
 
+};
+
+function editTodoItem(li) {
+    const span = li.querySelector('span');
+    const todoText = span.textContent;
+    const input = document.createElement('input');
+    input.type = 'text';
+    input.value = todoText;
+    li.insertBefore(input, span);
+    li.removeChild(span);
+
+    const saveBtn = document.createElement('button');
+    saveBtn.textContent = 'Save';
+    saveBtn.className = 'save-btn';
+    li.insertBefore(saveBtn, li.querySelector('.delete-btn'));
+    li.removeChild(li.querySelector('.edit-btn'));
+
+    saveBtn.addEventListener('click', function() {
+        const newTodoText = input.value.trim();
+        if (newTodoText !== '') {
+            span.textContent = newTodoText;
+            li.insertBefore(span, input);
+            li.removeChild(input);
+
+            const newEditBtn = document.createElement('button');
+            newEditBtn.textContent = 'Edit';
+            newEditBtn.className = 'edit-btn';
+            li.insertBefore(newEditBtn, li.querySelector('.delete-btn'));
+            li.removeChild(saveBtn);
+
+            newEditBtn.addEventListener('click', function() {
+                editTodoItem(li);
+            });
+        }
+    });
 }
