@@ -1,3 +1,7 @@
+html{
+    background-color: lightskyblue;
+}
+
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
@@ -6,7 +10,7 @@ body {
 }
 
 header {
-    background: #333;
+    background: #000;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
@@ -25,9 +29,11 @@ nav {
     padding: 0 1rem;
 }
 
-nav .logo {
+nav .logo a {
+    color :white;
     font-size: 1.5rem;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .nav-links {
@@ -44,11 +50,18 @@ nav .logo {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    color: lightskyblue;
+}
+
+.nav-links a:hover {
+    color: white; 
+    transform: scale(0.95); /* Add this line */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.12), 0 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 #hero {
     height: 100vh;
-    background: url('Ph.jpg') no-repeat center center/cover;
+    background: url('homepgpics/Ph.jpg') no-repeat center center/cover;
     position: relative;
     display: flex;
     justify-content: center;
