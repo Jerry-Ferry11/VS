@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Old-timers: Studio Archives 2024</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Old-timers</h1>
+      <p class="subtitle">Archive's Timeline: May–July 2024</p>
+      <p class="subtitle secondary-subtitle">A Three-month sprint through HTML, CSS, and vanilla JavaScript</p>
+    </header>
+
+    <div class="timeline-container">
+      <div class="timeline-thread"></div>
+
+      <div class="projects">
+        <div class="project left">
+          <a href="Todolist/list.html" class="project-card-link">
+            <div class="project-card">
+              <div class="dot"></div>
+              <div class="project-date">May 1–10, 2024</div>
+              <h2 class="project-title">Todolist</h2>
+              <div class="project-type">First experiment</div>
+              <p class="project-description">A clean, minimal todo app. Foundation for understanding state management, DOM manipulation, and local storage persistence in vanilla JavaScript.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="project right">
+          <a href="Timer Website/index.html" target="_blank" class="project-card-link">
+            <div class="project-card">
+              <div class="dot"></div>
+              <div class="project-date">May 15–25, 2024</div>
+              <h2 class="project-title">Timer Website</h2>
+              <div class="project-type">Timing and intervals</div>
+              <p class="project-description">Explored timing logic and countdown mechanics. Built confidence with animation loops, event listeners, and real-time DOM updates without frameworks.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="project left">
+          <a href="Demo Website/index.html" target="_blank" class="project-card-link">
+            <div class="project-card">
+              <div class="dot"></div>
+              <div class="project-date">May 25–Jun 5, 2024</div>
+              <h2 class="project-title">Demo Website</h2>
+              <div class="project-type">Layout and styling</div>
+              <p class="project-description">A multi-section portfolio-style website. Practiced responsive design, CSS Grid and Flexbox, smooth scrolling, and intentional typography pairing.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="project right">
+          <a href="Portfolio/index.html" target="_blank" class="project-card-link">
+            <div class="project-card">
+              <div class="dot"></div>
+              <div class="project-date">Jun 10–20, 2024</div>
+              <h2 class="project-title">Portfolio</h2>
+              <div class="project-type">Self-presentation</div>
+              <p class="project-description">A showcase of work and skills. Learned about visual hierarchy, card-based layouts, and crafting narrative through design. Testing aesthetic direction for personal branding.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="project left">
+          <a href="ToDoList 2.0/index.html" target="_blank" class="project-card-link">
+            <div class="project-card">
+              <div class="dot"></div>
+              <div class="project-date">Jun 25–Jul 5, 2024</div>
+              <h2 class="project-title">ToDoList 2.0</h2>
+              <div class="project-type">Iteration</div>
+              <p class="project-description">Second iteration of the original. Applied lessons learned: better code structure, improved UX, refined styling. Shows the power of revisiting work with fresh perspective.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="project right">
+          <a href="Demo Language Quiz App/app.html" target="_blank" class="project-card-link">
+            <div class="project-card">
+              <div class="dot"></div>
+              <div class="project-date">Jul 8–22, 2024</div>
+              <h2 class="project-title">Demo Language Quiz App</h2>
+              <div class="project-type">Capstone</div>
+              <p class="project-description">A quiz interface exploring interactivity and user flow. Built with vanilla JS, focusing on clean interactions, form handling, and result tracking. Bridge toward more complex applications.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>All projects built with plain HTML, CSS, and vanilla JavaScript.</p>
+      <p class="footer-link-wrapper">
+        <a href="https://github.com/Jerry-Ferry11/Old-timers" target="_blank" rel="noopener noreferrer" class="footer-link">View repository →</a>
+      </p>
+      <p class="footer-note">
+        &copy; <span id="year"></span> StormChaser  A learning archive from May to July 2024. Each project taught something; together they show growth.
+      </p>
+    </footer>
+  </div>
+  <script>
+    // Update the year in the footer dynamically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
